@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+    --primary: #10b981; /* emerald-500 */
+    --primary-hover: #059669; /* emerald-600 */
+    --secondary: #4f46e5; /* indigo-600 */
+    --bg-color: #f1f5f9; /* slate-100 */
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    @apply bg-slate-100 text-slate-800 antialiased selection:bg-indigo-500 selection:text-white;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Glassmorphism utilities */
+.glass {
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+}
