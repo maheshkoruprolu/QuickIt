@@ -5,6 +5,7 @@ A modern, full-stack ecommerce application built with React, Express, and MongoD
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Node.js 16+ and npm
 - MongoDB instance (local or cloud)
 - Cloudinary account (for image uploads)
@@ -13,8 +14,9 @@ A modern, full-stack ecommerce application built with React, Express, and MongoD
 ### Setup
 
 **1. Clone and install**
+
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/maheshkoruprolu/QuickIt.git
 cd QuickIt
 npm install --prefix backend
 npm install --prefix frontend
@@ -23,6 +25,7 @@ npm install --prefix frontend
 **2. Configure environment variables**
 
 Backend: Copy `backend/.env.example` to `backend/.env` and fill in:
+
 ```
 MONGODB_URI=your_mongo_connection
 PORT=8080
@@ -36,6 +39,7 @@ FRONTEND_URL=http://localhost:5173
 ```
 
 Frontend: Copy `frontend/.env.example` to `frontend/.env.example` and fill in:
+
 ```
 VITE_API_BASE_URL=http://localhost:8080
 ```
@@ -43,11 +47,13 @@ VITE_API_BASE_URL=http://localhost:8080
 **3. Run locally**
 
 Backend (from project root):
+
 ```bash
 cd backend && npm run dev
 ```
 
 Frontend (from project root):
+
 ```bash
 cd frontend && npm run dev
 ```
@@ -69,4 +75,3 @@ Frontend runs on `http://localhost:5173`
 - **Admin Panel** – Manage categories, subcategories, products with edit/delete
 - **Profile** – Update personal info, avatar upload, saved addresses
 - **Images** – Cloudinary integration for product and avatar uploads
-
